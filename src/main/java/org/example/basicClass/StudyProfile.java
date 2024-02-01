@@ -1,10 +1,13 @@
 package org.example.basicClass;
 
 public enum StudyProfile {
-    MEDICINE("МЕДИЦИНА"),
-    TEACHER("УЧИТЕЛЬ"),
-    TRANSLATOR("ПЕРЕВОДЧИК"),
-    PROGRAMMER("ПРОГРАММИСТ");
+    PHYSICS("Физика"),
+    COMPUTER_SCIENCE("Информатика"),
+    MATHEMATICS("Математика"),
+    JURISPRUDENCE("Юриспруденция"),
+    MEDICINE("Медицина"),
+    LINGUISTICS("Лингвистика");
+
 
     private final String profileName;
 

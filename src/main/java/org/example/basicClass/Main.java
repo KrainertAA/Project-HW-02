@@ -1,11 +1,21 @@
 package org.example.basicClass;
 
-public class Main {
-    public static void main(String[] args) {
-        University ENU = new University("Первый", "Евразийский Национальный Университет", "ЕНУ", 1985, StudyProfile.TEACHER);
-        Student Ivanov = new Student("Петров Иван", "Первый", 3, 4.2f);
-        System.out.println(ENU);
-        System.out.println(Ivanov);
+import java.io.IOException;
+import java.util.List;
 
+public class Main {
+    public static void main(String[] args) throws IOException {
+
+        List<University> universities =
+                XLSXFileReader.readXlsUniversities("src/main/resources/universityInfo.xlsx");
+        for(University university : universities) {
+            System.out.println(university);
+        }
+
+        List<Student> students =
+                XLSXFileReader.readXlsStudents("src/main/resources/universityInfo.xlsx");
+        for(Student student : students) {
+            System.out.println(student);
+        }
     }
 }
