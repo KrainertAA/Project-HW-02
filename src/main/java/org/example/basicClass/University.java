@@ -1,5 +1,7 @@
 package org.example.basicClass;
 
+import org.example.basicClass.enums.StudyProfile;
+
 public class University {
     String id, fullName, shortName;
     int yearOfFoundation;
