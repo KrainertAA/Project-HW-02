@@ -1,4 +1,4 @@
-package org.example.basicClass.enums;
+package org.example.basicсlass.enums;
 
 public enum StudyProfile {
     PHYSICS("Физика"),

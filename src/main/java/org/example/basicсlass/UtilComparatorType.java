@@ -1,8 +1,8 @@
-package org.example.basicClass;
+package org.example.basicсlass;
 
-import org.example.basicClass.Comparator.*;
-import org.example.basicClass.enums.StudentComparatorType;
-import org.example.basicClass.enums.UniversityComparatorType;
+import org.example.basicсlass.сomparator.*;
+import org.example.basicсlass.enums.StudentComparatorType;
+import org.example.basicсlass.enums.UniversityComparatorType;
 
 public class UtilComparatorType {
 

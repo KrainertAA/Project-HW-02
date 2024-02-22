@@ -1,9 +1,16 @@
-package org.example.basicClass;
+package org.example.basicсlass;
+
+import com.google.gson.annotations.SerializedName;
 
 public class Student {
-    String fullName, universityId;
-    int currentCourseNumber;
-    float avgExamScore;
+    @SerializedName("studentName")
+    private String fullName;
+    @SerializedName("universityId")
+    private String universityId;
+    @SerializedName("course")
+    private int currentCourseNumber;
+    @SerializedName("avgScore")
+    private float avgExamScore;
 
     public Student() {
     }

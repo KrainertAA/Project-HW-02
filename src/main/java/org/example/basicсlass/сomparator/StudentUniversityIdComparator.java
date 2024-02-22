@@ -1,7 +1,7 @@
-package org.example.basicClass.Comparator;
+package org.example.basicсlass.сomparator;
 
 import org.apache.commons.lang3.StringUtils;
-import org.example.basicClass.Student;
+import org.example.basicсlass.Student;
 
 public class StudentUniversityIdComparator implements StudentComparator{
     @Override

@@ -1,9 +1,9 @@
-package org.example.basicClass;
+package org.example.basicсlass;
 
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.example.basicClass.enums.StudyProfile;
+import org.example.basicсlass.enums.StudyProfile;
 
 import java.io.FileInputStream;
 import java.io.IOException;
