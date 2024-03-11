@@ -3,16 +3,32 @@ package org.example.basicсlass;
 import com.google.gson.annotations.SerializedName;
 import org.example.basicсlass.enums.StudyProfile;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlTransient;
+
+@XmlAccessorType(XmlAccessType.FIELD)
 public class University {
+
     @SerializedName("universityId")
+    @XmlElement(name = "universityId")
     private String id;
+
     @SerializedName("universityName")
+    @XmlElement(name = "universityName")
     private String fullName;
+
     @SerializedName("universityShortName")
+    @XmlTransient
     private String shortName;
+
     @SerializedName("foundation")
+    @XmlTransient
     private int yearOfFoundation;
+
     @SerializedName("profile")
+    @XmlElement(name = "universityProfile")
     private StudyProfile mainProfile;
 
     public University() {
@@ -22,41 +38,47 @@ public class University {
         return id;
     }
 
-    public void setId(String id) {
+    public University setId(String id) {
         this.id = id;
+        return this;
     }
 
     public String getFullName() {
         return fullName;
     }
 
-    public void setFullName(String fullName) {
+    public University setFullName(String fullName) {
         this.fullName = fullName;
+        return this;
     }
 
     public String getShortName() {
         return shortName;
     }
 
-    public void setShortName(String shortName) {
+    public University setShortName(String shortName) {
         this.shortName = shortName;
+        return this;
     }
 
     public int getYearOfFoundation() {
         return yearOfFoundation;
     }
 
-    public void setYearOfFoundation(int yearOfFoundation) {
+    public University setYearOfFoundation(int yearOfFoundation) {
         this.yearOfFoundation = yearOfFoundation;
+        return this;
     }
 
     public StudyProfile getMainProfile() {
         return mainProfile;
     }
 
-    public void setMainProfile(StudyProfile mainProfile) {
+    public University setMainProfile(StudyProfile mainProfile) {
         this.mainProfile = mainProfile;
+        return this;
     }
+
 
     @Override
     public String toString() {
